@@ -1,0 +1,28 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "type": "node",
+          "request": "launch",
+          "name": "Launch Program",
+          // "program": "${workspaceFolder}/test/test-xml.js",
+          "program": "${workspaceFolder}/bin/index.js",
+          "env": {
+            "NODE_ENV": "local.shopping",
+            "HTTP_PROXY": "http://127.0.0.1:12759",
+          },
+          "args": [
+            "conv",
+            "--input",
+            "/Users/michaelcao/Library/Mobile Documents/com~apple~CloudDocs/SmartRetail/KA.永辉/实时数据/20190627155920.oP_Ic0Uf0zuebr6CoGbxtjfPGY00.log",
+            "--output",
+            "/Users/michaelcao/Library/Mobile Documents/com~apple~CloudDocs/SmartRetail/KA.永辉/实时数据/20190627155920.md",
+            "--unique"
+          ],
+          "console": "integratedTerminal"
+      }
+  ]
+}
